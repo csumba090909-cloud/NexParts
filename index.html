@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReVendas Hardware</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <aside class="sidebar" id="sidebar" aria-label="Menu principal">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">
+            <span></span>
+          </div>
+          <div>
+            <strong>ReVendas</strong>
+            <small>Hardware verificado</small>
+          </div>
+        </div>
+
+        <nav class="nav-block" aria-label="Navegacao principal">
+          <a href="#" class="active">
+            <span class="icon" aria-hidden="true">⌂</span>
+            Inicio
+          </a>
+          <a href="#produtos">
+            <span class="icon" aria-hidden="true">⌕</span>
+            Produtos
+          </a>
+          <a href="#categorias">
+            <span class="icon" aria-hidden="true">▦</span>
+            Categorias
+          </a>
+          <a href="#ofertas">
+            <span class="icon" aria-hidden="true">%</span>
+            Promocoes
+          </a>
+          <a href="#lojas">
+            <span class="icon" aria-hidden="true">⌑</span>
+            Lojas parceiras
+          </a>
+          <a href="#entrega">
+            <span class="icon" aria-hidden="true">⇢</span>
+            Entrega
+          </a>
+        </nav>
+
+        <div class="nav-block account-links">
+          <p>Minha conta</p>
+          <a href="#">
+            <span class="icon" aria-hidden="true">◎</span>
+            Conta
+          </a>
+          <a href="#">
+            <span class="icon" aria-hidden="true">♡</span>
+            Favoritos
+          </a>
+          <a href="#">
+            <span class="icon" aria-hidden="true">▤</span>
+            Meus pedidos
+          </a>
+          <a href="#">
+            <span class="icon" aria-hidden="true">⚙</span>
+            Configuracoes
+          </a>
+        </div>
+
+        <section class="safe-card" aria-label="Compra segura">
+          <strong>Compra segura</strong>
+          <p>Produtos usados com teste, historico e garantia de loja parceira.</p>
+          <ul>
+            <li>Vendedores validados</li>
+            <li>Fotos reais do item</li>
+            <li>Garantia de devolucao</li>
+          </ul>
+        </section>
+      </aside>
+
+      <div class="overlay" id="overlay"></div>
+
+      <main class="content">
+        <header class="topbar">
+          <button class="menu-button" id="menuButton" aria-label="Abrir menu" aria-expanded="false" aria-controls="sidebar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <a class="mobile-brand" href="#" aria-label="Pagina inicial">
+            <span class="brand-mark small" aria-hidden="true"><span></span></span>
+            <strong>ReVendas</strong>
+          </a>
+
+          <label class="search-box">
+            <span aria-hidden="true">⌕</span>
+            <input type="search" placeholder="O que voce procura? Ex: RTX 3060, Ryzen 5 5600..." />
+          </label>
+
+          <div class="top-actions">
+            <button class="sell-button" type="button">+ Vender</button>
+            <button class="circle-button" type="button" aria-label="Favoritos">♡</button>
+            <button class="circle-button" type="button" aria-label="Mensagens">▱</button>
+            <button class="profile-button" type="button">
+              <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=96&q=80" alt="" />
+              <span>Lucas</span>
+            </button>
+          </div>
+        </header>
+
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <span class="eyebrow">Hardware usado verificado</span>
+            <h1 id="hero-title">Compre e venda componentes com total seguranca</h1>
+            <p>Placas de video, processadores, SSDs e pecas gamer testadas por lojas parceiras antes de chegar ate voce.</p>
+            <div class="hero-actions">
+              <a href="#produtos" class="primary-button">Explorar produtos</a>
+              <a href="#como-funciona" class="secondary-button">Como funciona</a>
+            </div>
+          </div>
+
+          <div class="hero-stage" aria-label="Componentes de computador em destaque">
+            <div class="gpu-card hardware-card">
+              <div class="fan fan-left"></div>
+              <div class="fan fan-right"></div>
+              <div class="gpu-lines"></div>
+            </div>
+            <div class="board-card hardware-card">
+              <div class="cpu-chip">Ryzen</div>
+              <div class="ram-stick"></div>
+              <div class="ram-stick second"></div>
+            </div>
+            <div class="verify-badge">
+              <span>✓</span>
+              <div>
+                <strong>Verificado</strong>
+                <small>Teste em 32 pontos</small>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="trust-strip" id="como-funciona" aria-label="Vantagens">
+          <article>
+            <span class="trust-icon">▣</span>
+            <div>
+              <strong>Lojas parceiras</strong>
+              <small>+250 lojas qualificadas</small>
+            </div>
+          </article>
+          <article>
+            <span class="trust-icon mint">✓</span>
+            <div>
+              <strong>Produtos verificados</strong>
+              <small>Teste tecnico completo</small>
+            </div>
+          </article>
+          <article>
+            <span class="trust-icon gold">◎</span>
+            <div>
+              <strong>Usuarios validados</strong>
+              <small>Seguranca com cadastro</small>
+            </div>
+          </article>
+          <article>
+            <span class="trust-icon amber">♢</span>
+            <div>
+              <strong>Garantia</strong>
+              <small>Ate 90 dias em produtos</small>
+            </div>
+          </article>
+        </section>
+
+        <section class="section-block promo-section" id="ofertas" aria-labelledby="promo-title">
+          <div class="section-heading">
+            <div>
+              <span class="kicker">Promocoes</span>
+              <h2 id="promo-title">Ofertas relampago</h2>
+            </div>
+            <span class="timer">Termina em: 02:45:18</span>
+          </div>
+
+          <div class="promo-grid">
+            <article class="promo-card main-promo">
+              <span class="discount">-18%</span>
+              <h3>RTX 3060 12GB + garantia</h3>
+              <p>Produto testado, limpo e pronto para upgrade gamer.</p>
+              <strong>R$ 1.399,00</strong>
+            </article>
+            <article class="promo-card">
+              <span class="discount">-12%</span>
+              <h3>Kit Ryzen 5</h3>
+              <p>Processador, cooler e placa-mae B450.</p>
+              <strong>R$ 1.249,00</strong>
+            </article>
+            <article class="promo-card">
+              <span class="discount">-20%</span>
+              <h3>SSD NVMe 1TB</h3>
+              <p>Alta velocidade para jogos e projetos.</p>
+              <strong>R$ 329,90</strong>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-block" id="categorias" aria-labelledby="categories-title">
+          <div class="section-heading">
+            <h2 id="categories-title">Classificacoes</h2>
+            <a href="#produtos">Ver todas</a>
+          </div>
+
+          <div class="category-grid">
+            <button class="category-card active" type="button" data-filter="todos">
+              <span>▦</span>
+              Todos
+            </button>
+            <button class="category-card" type="button" data-filter="processadores">
+              <span>▣</span>
+              Processadores
+            </button>
+            <button class="category-card" type="button" data-filter="placas-video">
+              <span>▭</span>
+              Placas de video
+            </button>
+            <button class="category-card" type="button" data-filter="placas-mae">
+              <span>▧</span>
+              Placas-mae
+            </button>
+            <button class="category-card" type="button" data-filter="ssd">
+              <span>▤</span>
+              SSD
+            </button>
+            <button class="category-card" type="button" data-filter="cooler">
+              <span>✧</span>
+              Cooler
+            </button>
+            <button class="category-card" type="button" data-filter="fontes">
+              <span>◫</span>
+              Fontes
+            </button>
+            <button class="category-card" type="button" data-filter="hds">
+              <span>◉</span>
+              HDs
+            </button>
+            <button class="category-card" type="button" data-filter="outros">
+              <span>⌘</span>
+              Outros
+            </button>
+          </div>
+        </section>
+
+        <section class="section-block" id="produtos" aria-labelledby="products-title">
+          <div class="section-heading">
+            <div>
+              <span class="kicker">Produtos</span>
+              <h2 id="products-title">Hardware usado em destaque</h2>
+            </div>
+            <a href="#">Ver todos os produtos</a>
+          </div>
+
+          <div class="product-grid">
+            <article class="product-card" data-category="placas-video">
+              <button class="favorite" type="button" aria-label="Adicionar aos favoritos">♡</button>
+              <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=520&q=80" alt="Placa de video usada" />
+              <div class="product-info">
+                <span class="condition">Verificado</span>
+                <h3>RTX 3060 12GB ASUS Dual</h3>
+                <p>Placa de video testada com benchmark e limpeza interna.</p>
+                <strong>R$ 1.399,00</strong>
+                <small>Tech Prime • SP</small>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="processadores">
+              <button class="favorite" type="button" aria-label="Adicionar aos favoritos">♡</button>
+              <img src="https://images.unsplash.com/photo-1555617981-dac3880eac6e?auto=format&fit=crop&w=520&q=80" alt="Processador usado" />
+              <div class="product-info">
+                <span class="condition">Verificado</span>
+                <h3>Ryzen 5 5600X</h3>
+                <p>Processador AMD revisado, sem pinos tortos e com nota.</p>
+                <strong>R$ 799,00</strong>
+                <small>Upgrade Store • RJ</small>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="placas-mae">
+              <button class="favorite" type="button" aria-label="Adicionar aos favoritos">♡</button>
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=520&q=80" alt="Placa-mae usada" />
+              <div class="product-info">
+                <span class="condition">Garantia 60 dias</span>
+                <h3>B450 AORUS M Gigabyte</h3>
+                <p>BIOS atualizada, slots revisados e espelho traseiro incluso.</p>
+                <strong>R$ 579,90</strong>
+                <small>Hard Solutions • PR</small>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="ssd">
+              <button class="favorite" type="button" aria-label="Adicionar aos favoritos">♡</button>
+              <img src="https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=520&q=80" alt="SSD NVMe usado" />
+              <div class="product-info">
+                <span class="condition">Saude 98%</span>
+                <h3>SSD NVMe Kingston 1TB</h3>
+                <p>Relatorio SMART disponivel e velocidade conferida.</p>
+                <strong>R$ 329,90</strong>
+                <small>Byte Tech • MG</small>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="cooler">
+              <button class="favorite" type="button" aria-label="Adicionar aos favoritos">♡</button>
+              <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=520&q=80" alt="Cooler gamer usado" />
+              <div class="product-info">
+                <span class="condition">RGB testado</span>
+                <h3>Cooler Master Hyper 212 RGB</h3>
+                <p>Fan silenciosa, suporte AM4 e Intel, pronto para montar.</p>
+                <strong>R$ 189,90</strong>
+                <small>Performance PC • SC</small>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="fontes">
+              <button class="favorite" type="button" aria-label="Adicionar aos favoritos">♡</button>
+              <img src="https://images.unsplash.com/photo-1617521034912-1c03453d13d8?auto=format&fit=crop&w=520&q=80" alt="Fonte de computador usada" />
+              <div class="product-info">
+                <span class="condition">80 Plus</span>
+                <h3>Fonte Corsair CX650M</h3>
+                <p>Cabos modulares, teste de carga e garantia de 90 dias.</p>
+                <strong>R$ 349,90</strong>
+                <small>Setup Mania • BA</small>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="hds">
+              <button class="favorite" type="button" aria-label="Adicionar aos favoritos">♡</button>
+              <img src="https://images.unsplash.com/photo-1531492746076-161ca9bcad58?auto=format&fit=crop&w=520&q=80" alt="HD usado" />
+              <div class="product-info">
+                <span class="condition">SMART OK</span>
+                <h3>HD Seagate Barracuda 2TB</h3>
+                <p>Armazenamento para backup com horas de uso verificadas.</p>
+                <strong>R$ 219,90</strong>
+                <small>Info Market • PE</small>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="outros">
+              <button class="favorite" type="button" aria-label="Adicionar aos favoritos">♡</button>
+              <img src="https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?auto=format&fit=crop&w=520&q=80" alt="Memoria RAM usada" />
+              <div class="product-info">
+                <span class="condition">Dual channel</span>
+                <h3>16GB DDR4 3200MHz Corsair</h3>
+                <p>Kit 2x8GB testado em stress e sem erros no diagnostico.</p>
+                <strong>R$ 299,90</strong>
+                <small>Tech Prime • SP</small>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-block stores" id="lojas" aria-labelledby="stores-title">
+          <div class="section-heading">
+            <div>
+              <span class="kicker">Parceiros</span>
+              <h2 id="stores-title">Lojas em destaque</h2>
+            </div>
+            <a href="#">Ver parceiros</a>
+          </div>
+
+          <div class="store-grid">
+            <article class="store-card">
+              <strong>Tech Prime</strong>
+              <span>★ 4.9 (1.2k)</span>
+            </article>
+            <article class="store-card">
+              <strong>Upgrade Store</strong>
+              <span>★ 4.8 (982)</span>
+            </article>
+            <article class="store-card">
+              <strong>Hard Solutions</strong>
+              <span>★ 4.9 (756)</span>
+            </article>
+            <article class="store-card">
+              <strong>Performance PC</strong>
+              <span>★ 4.8 (642)</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-block delivery" id="entrega" aria-labelledby="delivery-title">
+          <div>
+            <span class="kicker">Entrega</span>
+            <h2 id="delivery-title">Receba com rastreio e protecao</h2>
+            <p>O prototipo mostra como a plataforma poderia organizar envio, retirada em loja parceira e garantia de devolucao para pecas usadas.</p>
+          </div>
+          <a href="#produtos" class="primary-button">Ver produtos</a>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
